@@ -56,12 +56,51 @@ the following is a table
         <td>70</td>
         <td>99</td>
     </tr>
+</table>
 
 -----------------------------------------------<br>
 表单
-<form>
-
+<form action=""method="post"name="myform">
+    username: <input name="username"type="text"id="UserName4"maxlength="20"><br>
+    password: <input name="pwdd1"type="password"id="PWD14"size="20"maxlength="20"><br>
+    confirm password: <input name="ped2"type="password"id="PWD25"size="20"maxlength="20"><br>
+    Gender: <input name="sex"type="radio"class="noborder"value="Male"checked>male&nbsp;
+            <input name="sex"type="radio"class="noborder"value="Female">female<br>
+    Hobby: <input name="like"type="checkbox"value="Music"checked>Music&nbsp;
+            <input name="like"type="checkbox"value="Reading">Reading<br>
+    E-mail: <input name="email"type="text"id="PWD224"size="50"><br>
+            <input name="Submit"type="submit"class="btn_grey"value="Submit">
+            <input name="reset"type="reset"class="btn_grey"id="Reset"value="Reset">
+            <input type="image" name="imageField" src="image/btn_bg.jpg">
 </form>
-</table>
+
+    ------------------------------------------------------<br>
+下拉列表框:
+    <select name="select">
+    <option>数码相机</option>
+    <option>摄影器材</option>
+    <option>MP3/MP4/MP5</option>
+    <option>U盘/移动硬盘</option>
+</select>
+
+    &nbsp;多行列表框(不可多选):
+    <select name="select2"size="2">
+        <option>数码相机</option>
+        <option>摄影器材</option>
+        <option>MP3/MP4/MP5</option>
+        <option>U盘/移动硬盘</option>
+    </select>
+
+    &nbsp;多行列表框(可多选):
+    <select name="select2"size="2"multiple>
+        <option>数码相机</option>
+        <option>摄影器材</option>
+        <option>MP3/MP4/MP5</option>
+        <option>U盘/移动硬盘</option>
+    </select><br>
+
+------------------------------------------------------------<br>
+多行文本框:
+<textarea name="content"cols="30"rows="5"wrap="hard"></textarea>
 </body>
 </html>
